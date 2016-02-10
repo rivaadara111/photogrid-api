@@ -1,0 +1,74 @@
+/*sizing break solution**************/
+
+@media only screen and (min-width: 480px) {
+  li {
+    flex: 1 0 50%;
+    flex-direction: row;
+  }
+}
+
+/*******************tablet size*****************************************************/
+
+@media only screen and (min-width: 600px) {
+  .header {
+    display: flex;
+    flex: row-wrap;
+    align-items: center;
+    flex-direction: row;
+  }
+  .form {
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+  }
+  .photogrid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 0px;
+  }
+  li {
+    flex: 0 2 33.333333%;
+  }
+  .metadata-block {
+    width: 100%;
+    bottom:0;
+  }
+  .footer {
+    text-size: 16px;
+  }
+}
+
+/**************************desktop size*********************************************/
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    display: flex;
+    flex: row-wrap;
+    justify-content: flex-start;
+    margin-left: 2.5rem;
+  }
+  .logo img {
+    width: 500px;
+    margin-bottom: 1rem;
+  }
+  .search-button {
+    padding-left: 4.1rem;
+  }
+  /*photogrid*/
+  .photogrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+  li {
+    flex: 0 2 25%;
+  }
+  /*footer*/
+  .footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2.5rem;
+  }
+}

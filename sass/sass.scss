@@ -1,0 +1,13 @@
+//variables and mixins always go first.
+
+// @import 'variables';
+// @import 'mixins';
+
+//compiled in the stylesheet
+
+@import 'fonts';
+@import 'footer';
+@import 'logo_search';
+@import 'mediaqueries';
+@import 'photogrid';
+@import 'reset';

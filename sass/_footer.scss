@@ -1,0 +1,14 @@
+/*footer**************************/
+
+.footer {
+  font-size: .9rem;
+  color: #c2c2c2;
+  font-family: 'open_sans', sans-serif;
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  padding-top: 3rem;
+  span {
+    text-transform: uppercase;
+  }
+}
