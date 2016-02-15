@@ -1,6 +1,7 @@
 $(function () {
   var instapics = '';
   var $getPhotogrid = $('.photogrid');
+  var failSafe = ('<img src=images/ajax-loader.gif style="width:3rem;">');
 
   $('.search-button').on('click', function (event) {
     event.preventDefault();
@@ -14,6 +15,8 @@ $(function () {
     $('input').css({
       'background-color': 'black',
     });
+
+    $getPhotogrid.append(failSafe);
 
     var hashtag = $('input[name="search"]').val();
 
@@ -47,14 +50,13 @@ $(function () {
             instapics = '';
           })
 
-          .fail(function () {
-            var failSafe = ('<img src=images/ajax-loader.gif>');
-            $('.photogrid').append(failSafe);
-            $('.photogrid').append('<p class="sorry_msg">Sorry! Instagrid has encountered a problem, please try again.</p>');
+          .fail(function (failSafe) {
+            $('.photogrid').empty().append('<p class="sorry_msg">Sorry! Instagrid has encountered a problem, please try again.</p>');
           })
 
+
         .always(function (failsafe) {
-          $('.photogrid').append(failSafe);
+          $('.photogrid').remove(failSafe);
         });
 
   });
