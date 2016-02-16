@@ -1,6 +1,7 @@
 $(function () {
   var instapics = '';
   var $getPhotogrid = $('.photogrid');
+  var failSafe = ('<img src=images/ajax-loader.gif style="width:3rem;">');
 
   $('.search-button').on('click', function (event) {
     event.preventDefault();
@@ -14,6 +15,8 @@ $(function () {
     $('input').css({
       'background-color': 'black',
     });
+
+    $getPhotogrid.append(failSafe);
 
     var hashtag = $('input[name="search"]').val();
 
@@ -47,21 +50,16 @@ $(function () {
             instapics = '';
           })
 
-          .fail(function () {
-            $('.photogrid').append('<li class="sorry_msg">Sorry! Instagrid has encountered a problem, please try again.</li>').css({
-        'text-align': 'center',
-        'font-style': 'italic',
-        'font-family': 'Open Sans',
-        'font-size': '2rem'
+          .fail(function (failSafe) {
+            $('.photogrid').empty().append('<p class="sorry_msg">Sorry! Instagrid has encountered a problem, please try again.</p>');
+          })
+
+        .always(function (failsafe) {
+          $('.photogrid').remove(failSafe);
         });
 
         list= '';
   });
-
-        // .always(function (failsafe) {
-        //   var failSafe = ('<img src=images/ajax-loader.gif>');
-        //   $('.photogrid').append(failSafe);
-        // });
 
   });
 
@@ -73,7 +71,6 @@ $(function () {
   });
   $('body').on('mouseout', 'li', function (event) {
     $(this).find('.metadata-block').removeClass('metadata-block-hover');
-  });
 
   //initial function closing brackets below.
 });

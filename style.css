@@ -310,6 +310,14 @@ li img {
 .fa-heart {
     font-size: .9rem;
 }
+.sorry_msg {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    max-height: 400px;
+    color: #ffffff;
+}
 /*footer**************************/
 
 .footer {
