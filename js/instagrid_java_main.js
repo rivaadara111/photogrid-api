@@ -48,17 +48,26 @@ $(function () {
           })
 
           .fail(function () {
-            var failSafe = ('<img src=images/ajax-loader.gif>');
-            $('.photogrid').append(failSafe);
-            $('.photogrid').append('<p class="sorry_msg">Sorry! Instagrid has encountered a problem, please try again.</p>');
-          })
-
-        .always(function (failsafe) {
-          $('.photogrid').append(failSafe);
+            $('.photogrid').append('<li class="sorry_msg">Sorry! Instagrid has encountered a problem, please try again.</li>').css({
+        'text-align': 'center',
+        'font-style': 'italic',
+        'font-family': 'Open Sans',
+        'font-size': '2rem'
         });
+
+        list= '';
+  });
+
+        // .always(function (failsafe) {
+        //   var failSafe = ('<img src=images/ajax-loader.gif>');
+        //   $('.photogrid').append(failSafe);
+        // });
 
   });
 
+  $('.search-button').on('click', '.photogrid', function(event){
+    $(document).find('.photogrid').slideUp('slow');
+  });
   $('body').on('mouseover', 'li', function (event) {
     $(this).find('.metadata-block').addClass('metadata-block-hover');
   });
