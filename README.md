@@ -1,4 +1,4 @@
-<b><h3>Aresponsive 3rd party site populated using the Instagram API built for mobile, tablet, and desktop.</h3> <i>Built out using HTML, CSS, jQuery & Javscript.</i></b><br>
+<b><h3>A responsive 3rd party site populated using the Instagram API built for mobile, tablet, and desktop.</h3> <i>Built out using HTML, CSS, jQuery & Javascript.</i></b><br>
 <hr>
 <b>It has the following functionality:</b><br>
 
@@ -10,7 +10,7 @@
 
 --Links each returned image to its URL on Instagram.<br>
 
---Built out using HTML, CSS, jQuery & Javscript.<br>
+--Built out using HTML, CSS, jQuery & Javascript.<br>
 
 --Contains a single .html file and an external, minified .css file & .js file.<br>
 
