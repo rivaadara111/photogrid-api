@@ -101,9 +101,15 @@ li {
   margin-left: 30vw;
 }
 
+.gif-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+  }
 .loader-gif{
   width: 15rem;
-  margin: 10vh 10vw 10vh 0vw;
 }
 .button-section{
   display: none;
