@@ -90,6 +90,13 @@ $(function() {
   // load more function--------------------*
   $('.load-more').on('click', function(event) {
     event.preventDefault();
+
+    $(document).bind('ajaxSend', function() {
+      $('.loader').show();
+    }).bind('ajaxComplete', function() {
+      $('.loader').hide();
+    });
+
     $.ajax({
         dataType: 'jsonp',
         method: 'GET',
