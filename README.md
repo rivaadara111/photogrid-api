@@ -1,6 +1,6 @@
-<b><h3>This project is a responsive 3rd party site populated using the Instagram API built for mobile, tablet, and desktop.</h3> <br>It is built out using HTML, CSS, jQuery & Javscript.</b><br>
-
-<i>It has the following functionality:</i><br>
+<b><h3>Aresponsive 3rd party site populated using the Instagram API built for mobile, tablet, and desktop.</h3> <i>Built out using HTML, CSS, jQuery & Javscript.</i></b><br>
+<hr>
+<b>It has the following functionality:</b><br>
 
  --Responsively designed and optimized for mobile-first with 3 breakpoints @ 480px, 600px, 1000px.<br>
 
