@@ -11,18 +11,18 @@ var autoprefixer = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-css');
 
 gulp.task('uglify', function(){
-    gulp.src('./js/instagrid_java_main.js') //what do we want our gulp files to consume?
+    gulp.src('./js/script.js') //what do we want our gulp files to consume?
       .pipe(plumber())
       .pipe(jscs())
       .pipe(jscs.reporter())
       .pipe(jshint())
       .pipe(uglify({errorHandler: notify.onError("Error: <%= error.message %>")}))
       .pipe(rename('main.min.js')) //call the uglify function on these files
-      .pipe(gulp.dest('./build'));          //where do we put the new files? (build folder)
+      .pipe(gulp.dest('./build/js'));          //where do we put the new files? (build folder)
 });
 
 gulp.task('sass', function() {
-   gulp.src('./sass/sass.scss')
+   gulp.src('./sass/*.scss')
       .pipe(sass())
       .pipe(autoprefixer({
          browsers: ['last 2 versions']
@@ -38,9 +38,9 @@ gulp.task('browser-sync', function(){
       baseDir: './'
     }
   });
-  gulp.watch('sass/*.scss' ['.sass']);
-  gulp.watch('./js/*js', ['uglify']).on('change', browserSync.reload);
-  gulp.watch(['./build/main.min.js','./build/style.min.css','./index.html']).on('change', browserSync.reload);
+  gulp.watch('./sass/*.scss', ['sass']);
+  gulp.watch('./js/*js', ['uglify']);
+  gulp.watch(['./build/js/main.min.js','./build/css/style.min.css','./index.html']).on('change', browserSync.reload);
 });
 
 gulp.task('default', ['uglify', 'sass', 'browser-sync']);

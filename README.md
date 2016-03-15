@@ -1,23 +1,25 @@
-This project is a responsive 3rd party site populated using the Instagram API.
+<b>This project is a responsive 3rd party site populated using the Instagram API built for mobile, tablet, and desktop. It is built out using HTML, CSS, jQuery & Javscript.</b><br>
 
-It has the following functionality: --Responsively designed and optimized for mobile-first with 3 breakpoints @ 480px, 600px, 1000px.
+<i>It has the following functionality:</i><br>
 
---Dynamically fetches photos based a text string input into a search field
+ --Responsively designed and optimized for mobile-first with 3 breakpoints @ 480px, 600px, 1000px.<br>
 
---Link each returned image to its URL on Instagram
+--Dynamically fetches photos based a text string input into a search field.<br>
 
---Built out using HTML, CSS, jQuery & Javscript
+--Uses Ajax to fetch data from an Instagram API endpoint.<br>
 
---Contains a single .html file and an external, minified .css file & .js file.
+--Links each returned image to its URL on Instagram.<br>
 
---Uses Sass as a preprocessor
+--Built out using HTML, CSS, jQuery & Javscript.<br>
 
---Uses Gulp for running build tasks, such as minification, and error checking
+--Contains a single .html file and an external, minified .css file & .js file.<br>
 
---Incorporates custom fonts using @font-face
+--Uses Sass as a preprocessor.<br>
 
---Uses icon fonts from font-awesome.
+--Uses Gulp for running build tasks, such as minification, and error checking.<br>
 
---Use Ajax to fetch data from an Instagram API endpoint
+--Incorporates custom fonts using @font-face.<br>
 
---Transitions users between UI states, starting where no photos have been returned, and then subsequently transitioning where photos populate the grid (by incorporating a loading gif)
+--Uses icon fonts from font-awesome.<br>
+
+--Transitions users between UI states, starting where no photos have been returned, and then subsequently transitioning where photos populate the grid by incorporating a loader gif. <br>

@@ -1,4 +1,4 @@
-/*sizing break solution**************/
+/*Sizing Break Fix---------------------------*/
 
 @media only screen and (min-width: 480px) {
   li {
@@ -7,7 +7,8 @@
   }
 }
 
-/*******************tablet size*****************************************************/
+
+/*Tablet-----------------------------------------*/
 
 @media only screen and (min-width: 600px) {
   .header {
@@ -39,8 +40,9 @@
   }
 }
 
-/**************************desktop size*********************************************/
+/*Desktop-----------------------------------------*/
 
+// landing page
 @media only screen and (min-width: 1000px) {
   .header {
     display: flex;
@@ -55,7 +57,8 @@
   .search-button {
     padding-left: 4.1rem;
   }
-  /*photogrid*/
+
+//Photogrid
   .photogrid {
     display: flex;
     flex-wrap: wrap;
@@ -65,7 +68,8 @@
   li {
     flex: 0 2 25%;
   }
-  /*footer*/
+
+//Footer
   .footer {
     display: flex;
     justify-content: flex-start;

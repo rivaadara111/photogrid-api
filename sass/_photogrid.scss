@@ -1,8 +1,11 @@
-/*instagrid css**************************/
+/*Photogrid page---------------------------*/
 
-.photogrid-container {
-  margin: 0 auto;
-  width: 100%;
+.header{
+  transition: all 1s ease-in;
+}
+
+.photogrid-slide{
+  height: 90vh;
 }
 
 .photogrid {
@@ -10,7 +13,6 @@
   flex-direction: row;;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 50px;
 }
 
 li {
@@ -89,9 +91,35 @@ li {
 }
 
 .sorry_msg {
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  font-family: 'open_sans', sans-serif;
+  font-size: 2rem;
   max-width: 400px;
   max-height: 400px;
+  color: #ffffff;
+  margin-top: 10rem;
+  margin-left: 30vw;
+}
+
+.loader-gif{
+  width: 15rem;
+  margin: 10vh 10vw 10vh 0vw;
+}
+.button-section{
+  display: none;
+}
+
+.load-more{
+  background-color: red;
+  border: 1px solid white;
+  font-family: 'open_sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  padding: .5rem 1rem .5rem 1rem;
+  cursor: pointer;
+  outline: none;
+  &:hover{
+    background-color: crimson;
+  }
 }

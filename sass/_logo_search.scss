@@ -1,9 +1,10 @@
-/*Landing page*/
+/*Landing page---------------------------*/
+/*--------------------------------------*/
 
 html {
   background-color: black;
 }
-
+// wtf
 .header {
   height: 70vh;
   display: flex;
@@ -24,7 +25,7 @@ html {
   margin-bottom: 1rem;
 }
 
-/*form*******************/
+/*Form*----------------------------------*/
 
 .form {
   border-bottom: 1px solid #dbdbdb;
@@ -39,7 +40,6 @@ input {
   background-color: black;
   color: white;
   padding-left: .7rem;
-  /*order:2*/
   &[type="text"]:focus {
     outline: none;
   }
@@ -53,7 +53,7 @@ input {
   font-weight: bold;
 }
 
-/*search button/magnifying glass icon***************/
+/*search button/magnifying glass icon----------------*/
 
 .search-button {
   color: white;
